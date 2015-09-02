@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
         final EditText editText1 = (EditText) findViewById(R.id.addItem);
         final TextView editText2 = (TextView) findViewById(R.id.showItems);
         Button button =(Button) findViewById(R.id.button1);
+
         button.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 editText2.setText(editText1.getText() + ", " + editText2.getText());
@@ -35,7 +36,7 @@ public class MainActivity extends Activity {
 
             @Override
             public boolean onCreateOptionsMenu(Menu menu) {
-                // Inflate the menu; this adds items to the action bar if it is present.
+                //f Inflate the menu; this adds items to the action bar if it is present.
                 getMenuInflater().inflate(R.menu.menu_main, menu);
                 return true;
             }
